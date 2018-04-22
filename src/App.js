@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar.js';
 import Modal from './components/Modal/Modal.js';
 import ClickCard from './components/ClickCard/ClickCard.js';
+import MessageCard from './components/MessageCard/MessageCard.js';
 import './index.css';
 import cards from './cards.json';
 import Footer from "./components/Footer";
@@ -12,7 +13,7 @@ class App extends Component {
       score: 0,
       topScore: 0,
       clickedCards: [],
-      footerText: ""
+      MessageCardText: "Choose a Character"
     }
 
   characterChosen = (id) => {
@@ -22,12 +23,12 @@ class App extends Component {
       this.setState({score: 0, clickedCards: []})
 
       pageBody.classList.add('shakeWrapper')
-      this.setState({footerText: 'You Lose! You Chose that Character already!'})
+      this.setState({MessageCardText: 'You Lose! You Chose that Character already!'})
       setTimeout(() => {
         pageBody.classList.remove('shakeWrapper');
       }, 500);
       setTimeout(() => {
-        this.setState({footerText: ""})
+          this.setState({MessageCardText: ""})
       }, 1800)
 
     } else {
@@ -38,10 +39,10 @@ class App extends Component {
 
       } 
       if (this.state.score === 11) {
-        this.setState({footerText: 'You Won! Play again?'})
+          this.setState({MessageCardText: 'You Won! Play again?'})
         this.setState({score: 0, clickedCards: [], cards: cards})
         setTimeout(() => {
-          this.setState({footerText: ''})
+            this.setState({MessageCardText: ''})
         }, 1800)
       } 
     }
@@ -84,8 +85,9 @@ class App extends Component {
         <br />
         <div className="container row cardWrapper">
           {this.renderCards(this.state.cards)}
-        </div>
-        <Footer text={this.state.footerText}/>
+            </div>
+        <MessageCard text={this.state.MessageCardText}/>
+        <Footer/>
       </div>
     );
   }

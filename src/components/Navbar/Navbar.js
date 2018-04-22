@@ -3,7 +3,7 @@ import React from 'react';
 
 function Navbar(props) {
 	return(
-	<div className="navbar-fixed">
+	<div className="navbar">
 		<nav>
 			<div className="nav-wrapper container">
 				<a style={{cursor: 'pointer'}}className='left' onClick={() => 

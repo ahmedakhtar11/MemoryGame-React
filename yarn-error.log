@@ -6675,7 +6675,7 @@ Trace:
   Exit code: 3221225786
   Command: C:\WINDOWS\system32\cmd.exe
   Arguments: /d /s /c react-scripts start
-  Directory: C:\Users\ahmed\OneDrive\Desktop\Good
+  Directory: C:\Users\ahmed\OneDrive\CodingBootCamp\GitHub\MemoryGame-React
   Output:
   
       at ProcessTermError.MessageError (C:\Users\ahmed\AppData\Roaming\npm\node_modules\yarn\lib\cli.js:186:110)
