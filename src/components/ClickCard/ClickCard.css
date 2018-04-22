@@ -1,0 +1,15 @@
+.card {
+  height: 120px;
+  cursor: pointer;
+  transition: all .2s ease-in-out;
+  overflow: hidden;
+  text-align: center;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+img {
+  width: 65%;
+}

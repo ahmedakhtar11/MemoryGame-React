@@ -1,0 +1,11 @@
+.footer {
+  min-height: 100px;
+  position: relative;
+  background-color: blue;
+  color: blue;
+}
+
+.footer-copyright {
+    background-color: blue;
+    color: blue;
+}
