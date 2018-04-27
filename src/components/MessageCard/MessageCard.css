@@ -1,9 +1,13 @@
-.footer2 {
+#footer2 {
     height: 50px;
     position: fixed;
-    background-color: slategrey;
-    color: white;
+    bottom: 3%;
+    background-color: greenyellow;
+    color: black;
     position: absolute;
-    bottom: 0;
     width: 100%;
+    text-align: center;
+    align-content: center;
+    align-self: center;
+     
 }

@@ -4,7 +4,7 @@ import "./Footer.css";
 
 function Footer(props) {
   return (
-    <footer className="footer">
+    <footer className="footer fluid">
         <div className="container center">
         Copyight © 2017 Ahmed Akhtar
         </div>

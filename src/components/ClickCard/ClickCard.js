@@ -9,7 +9,7 @@ function handleClick(props) {
 
 function ClickCard(props) {
 	return (
-		<div className="card img-container" onClick={() => handleClick(props)}>
+        <div className="card-img-top" onClick={() => handleClick(props)}>
 			<img alt={props.name} src={props.image} />
 		</div>
 	)

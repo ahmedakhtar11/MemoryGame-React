@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Navbar from './components/Navbar/Navbar.js';
-import Modal from './components/Modal/Modal.js';
 import ClickCard from './components/ClickCard/ClickCard.js';
 import MessageCard from './components/MessageCard/MessageCard.js';
 import './index.css';
@@ -13,7 +12,7 @@ class App extends Component {
       score: 0,
       topScore: 0,
       clickedCards: [],
-      MessageCardText: "Choose a Character"
+      MessageCardText: "Choose each Character only Once!"
     }
 
   characterChosen = (id) => {
@@ -65,7 +64,7 @@ class App extends Component {
 
   renderCards = (array) => {
     return this.state.cards.map(card => (
-      <section className='col s4 m3 l3' key={card.id} id={card.id}>
+      <section className='game' key={card.id} id={card.id}>
         <ClickCard
           name={card.name} 
           image={card.image} 
@@ -81,7 +80,6 @@ class App extends Component {
     return (
       <div className="container-fluid">
         <Navbar score={this.state.score} topScore={this.state.topScore}/>
-        <Modal />
         <br />
         <div className="container row cardWrapper">
           {this.renderCards(this.state.cards)}

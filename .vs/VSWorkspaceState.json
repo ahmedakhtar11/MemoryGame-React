@@ -7,9 +7,8 @@
     "\\src\\components\\ClickCard",
     "\\src\\components\\Footer",
     "\\src\\components\\MessageCard",
-    "\\src\\components\\Modal",
     "\\src\\components\\Navbar"
   ],
-  "SelectedNode": "\\src\\components\\Footer\\Footer.js",
+  "SelectedNode": "\\src\\index.js",
   "PreviewInSolutionExplorer": false
 }

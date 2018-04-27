@@ -3,20 +3,15 @@ import React from 'react';
 
 function Navbar(props) {
 	return(
-	<div className="navbar">
-		<nav>
-			<div className="nav-wrapper container">
-				<a style={{cursor: 'pointer'}}className='left' onClick={() => 
-					{document.getElementsByClassName('instructionsModal')[0].classList.remove('hide');
-				}}>Instructions</a>
+        <nav className="navbar navbar-default" id="navbar">
+            <div className="expand navbar-expand" id="navbarSupportedContent">
 				<a href="/" className='brand-logo center'>Memory Game</a>
-				<ul className='right'>
+                <ul className="navbar-nav mr-auto">
 					<li style={{paddingRight: "20px"}}>Score: {props.score}</li>
 					<li style={{paddingLeft: "20px"}}>Top Score: {props.topScore}</li>
-				</ul>
-			</div>
+                </ul>
+                </div>
 		</nav>
-	</div>
 	)
 }
 
